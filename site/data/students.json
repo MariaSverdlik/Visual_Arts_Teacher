@@ -1,0 +1,372 @@
+[
+  {
+    "id": "student-20",
+    "title": "Work02",
+    "year": "2026",
+    "category": "Works",
+    "technique": "Маркер",
+    "image": "images/students/picture-58.jpg",
+    "order": 21,
+    "description": ""
+  },
+  {
+    "id": "student-30",
+    "title": "Work03",
+    "year": "2026",
+    "category": "Works",
+    "technique": "Маркер",
+    "image": "images/students/add/picture-1.jpg",
+    "order": 22,
+    "description": ""
+  },
+  {
+    "id": "student-31",
+    "title": "Work04",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_01.jpg",
+    "order": 101,
+    "description": ""
+  },
+  {
+    "id": "student-32",
+    "title": "Work05",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_02.jpg",
+    "order": 100,
+    "description": ""
+  },
+  {
+    "id": "student-33",
+    "title": "Work06",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_03.jpg",
+    "order": 102,
+    "description": ""
+  },
+  {
+    "id": "student-34",
+    "title": "Work07",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_04.jpg",
+    "order": 104,
+    "description": ""
+  },
+  {
+    "id": "student-35",
+    "title": "Work 08",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_05.jpg",
+    "order": 105,
+    "description": ""
+  },
+  {
+    "id": "student-36",
+    "title": "Work01",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_06.jpg",
+    "order": 20,
+    "description": ""
+  },
+  {
+    "id": "student-37",
+    "title": "Work09",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_07.jpg",
+    "order": 106,
+    "description": ""
+  },
+  {
+    "id": "student-38",
+    "title": "Work10",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_08.jpg",
+    "order": 107,
+    "description": ""
+  },
+  {
+    "id": "student-39",
+    "title": "Work11",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_09.jpg",
+    "order": 108,
+    "description": ""
+  },
+  {
+    "id": "student-40",
+    "title": "Work12",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_10.jpg",
+    "order": 109,
+    "description": ""
+  },
+  {
+    "id": "student-41",
+    "title": "Work13",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_11.jpg",
+    "order": 110,
+    "description": ""
+  },
+  {
+    "id": "student-42",
+    "title": "Work14",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_12.jpg",
+    "order": 111,
+    "description": ""
+  },
+  {
+    "id": "student-43",
+    "title": "Work15",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_13.jpg",
+    "order": 112,
+    "description": ""
+  },
+  {
+    "id": "student-44",
+    "title": "Work16",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_15.jpg",
+    "order": 113,
+    "description": ""
+  },
+  {
+    "id": "student-45",
+    "title": "Work17",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_16.jpg",
+    "order": 114,
+    "description": ""
+  },
+  {
+    "id": "student-46",
+    "title": "Work18",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_17.jpg",
+    "order": 115,
+    "description": ""
+  },
+  {
+    "id": "student-47",
+    "title": "Work19",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_18.jpg",
+    "order": 116,
+    "description": ""
+  },
+  {
+    "id": "student-48",
+    "title": "Work20",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_19.jpg",
+    "order": 117,
+    "description": ""
+  },
+  {
+    "id": "student-49",
+    "title": "Work21",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_20.jpg",
+    "order": 118,
+    "description": ""
+  },
+  {
+    "id": "student-50",
+    "title": "Work22",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_21.jpg",
+    "order": 119,
+    "description": ""
+  },
+  {
+    "id": "student-51",
+    "title": "Work23",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_22.jpg",
+    "order": 120,
+    "description": ""
+  },
+  {
+    "id": "student-52",
+    "title": "Work24",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_23.jpg",
+    "order": 121,
+    "description": ""
+  },
+  {
+    "id": "student-53",
+    "title": "Work25",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_24.jpg",
+    "order": 122,
+    "description": ""
+  },
+  {
+    "id": "student-54",
+    "title": "Work26",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_25.jpg",
+    "order": 123,
+    "description": ""
+  },
+  {
+    "id": "student-55",
+    "title": "Work27",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_26.jpg",
+    "order": 124,
+    "description": ""
+  },
+  {
+    "id": "student-56",
+    "title": "Work28",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_27.jpg",
+    "order": 125,
+    "description": ""
+  },
+  {
+    "id": "student-57",
+    "title": "Work29",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_28.jpg",
+    "order": 126,
+    "description": ""
+  },
+  {
+    "id": "student-58",
+    "title": "Work30",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_29.jpg",
+    "order": 127,
+    "description": ""
+  },
+  {
+    "id": "student-59",
+    "title": "Work31",
+    "year": "",
+    "category": "Works",
+    "technique": "",
+    "image": "images/students/img_30.jpg",
+    "order": 128,
+    "description": ""
+  },
+  {
+    "id": "student-60",
+    "title": "Photo05",
+    "year": "",
+    "category": "Backstage",
+    "technique": "",
+    "image": "images/students/6S8LMQkNsE4.jpg",
+    "order": 5,
+    "description": ""
+  },
+  {
+    "id": "student-61",
+    "title": "Photo06",
+    "year": "",
+    "category": "Backstage",
+    "technique": "",
+    "image": "images/students/b5ZMmfobTEs.jpg",
+    "order": 6,
+    "description": ""
+  },
+  {
+    "id": "student-62",
+    "title": "Photo07",
+    "year": "",
+    "category": "Backstage",
+    "technique": "",
+    "image": "images/students/e8JV1EwLtHQ.jpg",
+    "order": 7,
+    "description": ""
+  },
+  {
+    "id": "student-63",
+    "title": "Photo08",
+    "year": "",
+    "category": "Backstage",
+    "technique": "",
+    "image": "images/students/6peavbnEy08.jpg",
+    "order": 8,
+    "description": ""
+  },
+  {
+    "id": "student-64",
+    "title": "Photo09",
+    "year": "",
+    "category": "Backstage",
+    "technique": "",
+    "image": "images/students/6WdsQRFQlm4.jpg",
+    "order": 9,
+    "description": ""
+  },
+  {
+    "id": "student-65",
+    "title": "Photo10",
+    "year": "",
+    "category": "Backstage",
+    "technique": "",
+    "image": "images/students/8yetCwjoIiE.jpg",
+    "order": 10,
+    "description": ""
+  }
+]

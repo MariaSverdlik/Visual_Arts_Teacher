@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin — Maria Sverdlik portfolio</title>
+<style>
+  :root {
+    --bg: #f4f4f2;
+    --panel: #ffffff;
+    --ink: #1e1f1c;
+    --muted: #6b6b66;
+    --line: rgba(30,31,28,0.14);
+    --accent: #345c7a;
+    --danger: #b3473d;
+    --ok: #3f7a4f;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--ink);
+    color: #fff;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .tabs {
+    display: flex;
+    gap: 8px;
+  }
+  .tab-btn {
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .tab-btn.active {
+    background: #fff;
+    color: var(--ink);
+  }
+  .download-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--ok);
+    background: var(--ok);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .download-btn:disabled {
+    background: #888;
+    border-color: #888;
+    cursor: not-allowed;
+  }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  .panel {
+    display: none;
+  }
+  .panel.active {
+    display: block;
+  }
+  .changes-banner {
+    background: #fff3cd;
+    border: 1px solid #e0c25a;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    display: none;
+  }
+  .changes-banner.show {
+    display: block;
+  }
+  .category-block {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    margin-bottom: 16px;
+  }
+  .category-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+    background: #fafafa;
+  }
+  .category-head h2 {
+    margin: 0;
+    font-size: 15px;
+  }
+  .category-head small {
+    color: var(--muted);
+    font-weight: 400;
+    margin-left: 8px;
+  }
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    padding: 16px;
+  }
+  .item-card {
+    border: 1px solid var(--line);
+    background: #fff;
+    font-size: 12px;
+    position: relative;
+  }
+  .item-card img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+    background: #eee;
+  }
+  .item-card .body {
+    padding: 8px;
+  }
+  .item-card .body strong {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+  .item-card .body span {
+    color: var(--muted);
+  }
+  .item-card .remove-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: rgba(179,71,61,0.9);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .empty-note {
+    padding: 16px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .add-form {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 18px;
+    margin-bottom: 20px;
+  }
+  .add-form h2 {
+    margin: 0 0 14px;
+    font-size: 15px;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .form-grid.full {
+    grid-template-columns: 1fr;
+  }
+  label {
+    display: grid;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  input, select, textarea {
+    font: inherit;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+  .submit-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .submit-btn {
+    padding: 10px 20px;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .new-category-toggle {
+    font-size: 12px;
+    color: var(--accent);
+    cursor: pointer;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  .preview-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    background: #eee;
+  }
+  .field-error {
+    color: var(--danger);
+    font-size: 12px;
+    margin-top: -4px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Admin · Maria Sverdlik portfolio</h1>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="works">Works</button>
+    <button class="tab-btn" data-tab="students">Students</button>
+  </div>
+  <button class="download-btn" id="downloadBtn" disabled>Скачать изменения (0)</button>
+</header>
+
+<main>
+  <div class="changes-banner" id="changesBanner">
+    Есть несохранённые изменения. Нажми «Скачать изменения», замени файл(ы) JSON в проекте и перенеси выбранные картинки в нужную папку, если ещё не сделал этого.
+  </div>
+
+  <!-- WORKS PANEL -->
+  <section class="panel active" id="panel-works">
+    <div class="add-form">
+      <h2>Добавить работу</h2>
+      <div class="form-grid">
+        <label>
+          Категория
+          <select id="works-category-select"></select>
+        </label>
+        <label style="align-self:end;">
+          <button type="button" class="new-category-toggle" id="works-new-category-toggle">+ новая категория</button>
+        </label>
+      </div>
+
+      <div class="form-grid" id="works-new-category-fields" style="display:none; border-top: 1px dashed var(--line); padding-top: 12px;">
+        <label>
+          ID категории
+          <input type="text" id="works-new-cat-id" placeholder="например watercolor-2">
+        </label>
+        <label>
+          Название категории
+          <input type="text" id="works-new-cat-name" placeholder="например Скетчи">
+        </label>
+        <label>
+          Order
+          <input type="number" id="works-new-cat-order" placeholder="70">
+        </label>
+      </div>
+
+      <div class="form-grid">
+        <label>
+          Файл изображения
+          <input type="file" id="works-file" accept="image/*">
+        </label>
+        <label>
+          Название работы
+          <input type="text" id="works-title">
+        </label>
+        <label>
+          Год
+          <input type="text" id="works-year">
+        </label>
+        <label>
+          Техника
+          <input type="text" id="works-technique">
+        </label>
+        <label>
+          Order (внутри категории)
+          <input type="number" id="works-order" value="1">
+        </label>
+      </div>
+      <div class="form-grid full">
+        <label>
+          Описание
+          <textarea id="works-description"></textarea>
+        </label>
+      </div>
+      <div class="submit-row">
+        <button type="button" class="submit-btn" id="works-submit">Добавить</button>
+        <span class="field-error" id="works-error"></span>
+      </div>
+    </div>
+
+    <div id="works-list"></div>
+  </section>
+
+  <!-- STUDENTS PANEL -->
+  <section class="panel" id="panel-students">
+    <div class="add-form">
+      <h2>Добавить работу ученика</h2>
+      <div class="form-grid">
+        <label>
+          Файл изображения
+          <input type="file" id="students-file" accept="image/*">
+        </label>
+        <label>
+          Название работы
+          <input type="text" id="students-title">
+        </label>
+        <label>
+          Год
+          <input type="text" id="students-year">
+        </label>
+        <label>
+          Категория
+          <input type="text" id="students-category" placeholder="например Основы">
+        </label>
+        <label>
+          Техника
+          <input type="text" id="students-technique">
+        </label>
+        <label>
+          Order
+          <input type="number" id="students-order" value="10">
+        </label>
+      </div>
+      <div class="form-grid full">
+        <label>
+          Описание
+          <textarea id="students-description"></textarea>
+        </label>
+      </div>
+      <div class="submit-row">
+        <button type="button" class="submit-btn" id="students-submit">Добавить</button>
+        <span class="field-error" id="students-error"></span>
+      </div>
+    </div>
+
+    <div id="students-list"></div>
+  </section>
+</main>
+
+<script>
+let worksData = null;       // объект с категориями, как в works.json
+let studentsData = null;    // массив, как в students.json
+let hasChanges = false;
+
+// ---------- helpers ----------
+
+function markChanged() {
+  hasChanges = true;
+  document.getElementById('changesBanner').classList.add('show');
+  const btn = document.getElementById('downloadBtn');
+  btn.disabled = false;
+  const count = countChanges();
+  btn.textContent = `Скачать изменения (${count})`;
+}
+
+let changeCount = 0;
+function countChanges() {
+  changeCount++;
+  return changeCount;
+}
+
+function slugify(str) {
+  return str
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9а-яё\s-]/gi, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+}
+
+function fileNameFor(input, fallbackPrefix) {
+  if (input.files && input.files[0]) {
+    return input.files[0].name;
+  }
+  return null;
+}
+
+function objectUrlFor(input) {
+  if (input.files && input.files[0]) {
+    return URL.createObjectURL(input.files[0]);
+  }
+  return null;
+}
+
+// ---------- load data ----------
+
+async function loadData() {
+  const [worksRes, studentsRes] = await Promise.all([
+    fetch('works.json'),
+    fetch('students.json')
+  ]);
+  worksData = await worksRes.json();
+  studentsData = await studentsRes.json();
+  renderWorksCategorySelect();
+  renderWorksList();
+  renderStudentsList();
+}
+
+// ---------- WORKS rendering ----------
+
+function renderWorksCategorySelect() {
+  const select = document.getElementById('works-category-select');
+  const categories = Object.values(worksData).sort((a, b) => a.order - b.order);
+  select.innerHTML = categories
+    .map(cat => `<option value="${cat.id}">${cat.name} (${cat.id})</option>`)
+    .join('');
+}
+
+function renderWorksList() {
+  const container = document.getElementById('works-list');
+  const categories = Object.values(worksData).sort((a, b) => a.order - b.order);
+
+  container.innerHTML = categories.map(cat => {
+    const items = (cat.works || []).slice().sort((a, b) => a.order - b.order);
+    const itemsHtml = items.length
+      ? `<div class="items-grid">${items.map(w => renderWorkCard(cat.id, w)).join('')}</div>`
+      : `<div class="empty-note">Нет работ в этой категории.</div>`;
+
+    return `
+      <div class="category-block">
+        <div class="category-head">
+          <h2>${cat.name} <small>id: ${cat.id} · order: ${cat.order}</small></h2>
+        </div>
+        ${itemsHtml}
+      </div>
+    `;
+  }).join('');
+
+  container.querySelectorAll('[data-remove-work]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const { catId, workId } = btn.dataset;
+      removeWork(catId, workId);
+    });
+  });
+}
+
+function renderWorkCard(catId, work) {
+  return `
+    <div class="item-card">
+      <button class="remove-btn" data-remove-work data-cat-id="${catId}" data-work-id="${work.id}" title="Удалить">×</button>
+      <img src="${work.image}" alt="${work.title}" onerror="this.style.opacity=0.3">
+      <div class="body">
+        <strong>${work.title}</strong>
+        <span>${work.year} · ${work.technique}</span>
+      </div>
+    </div>
+  `;
+}
+
+function removeWork(catId, workId) {
+  const cat = worksData[catId];
+  if (!cat) return;
+  cat.works = cat.works.filter(w => w.id !== workId);
+  markChanged();
+  renderWorksList();
+}
+
+// ---------- WORKS add ----------
+
+document.getElementById('works-new-category-toggle').addEventListener('click', () => {
+  const fields = document.getElementById('works-new-category-fields');
+  const isHidden = fields.style.display === 'none';
+  fields.style.display = isHidden ? 'grid' : 'none';
+});
+
+document.getElementById('works-submit').addEventListener('click', () => {
+  const errorEl = document.getElementById('works-error');
+  errorEl.textContent = '';
+
+  const fileInput = document.getElementById('works-file');
+  const title = document.getElementById('works-title').value.trim();
+  const year = document.getElementById('works-year').value.trim();
+  const technique = document.getElementById('works-technique').value.trim();
+  const description = document.getElementById('works-description').value.trim();
+  const order = Number(document.getElementById('works-order').value) || 1;
+
+  const newCatFieldsVisible = document.getElementById('works-new-category-fields').style.display !== 'none';
+
+  let categoryId, categoryName, categoryOrder;
+
+  if (newCatFieldsVisible) {
+    categoryId = document.getElementById('works-new-cat-id').value.trim();
+    categoryName = document.getElementById('works-new-cat-name').value.trim();
+    categoryOrder = Number(document.getElementById('works-new-cat-order').value) || 0;
+
+    if (!categoryId || !categoryName) {
+      errorEl.textContent = 'Заполни ID и название новой категории.';
+      return;
+    }
+    if (worksData[categoryId]) {
+      errorEl.textContent = 'Категория с таким ID уже существует.';
+      return;
+    }
+  } else {
+    categoryId = document.getElementById('works-category-select').value;
+    if (!categoryId) {
+      errorEl.textContent = 'Выбери категорию.';
+      return;
+    }
+  }
+
+  if (!fileInput.files[0]) {
+    errorEl.textContent = 'Выбери файл изображения.';
+    return;
+  }
+  if (!title) {
+    errorEl.textContent = 'Заполни название работы.';
+    return;
+  }
+
+  const fileName = fileInput.files[0].name;
+  const imagePath = `images/works/${fileName}`;
+
+  if (newCatFieldsVisible) {
+    worksData[categoryId] = {
+      id: categoryId,
+      name: categoryName,
+      order: categoryOrder,
+      works: []
+    };
+  }
+
+  const cat = worksData[categoryId];
+  const existingIds = (cat.works || []).map(w => Number(w.id)).filter(n => !isNaN(n));
+  const nextId = String((existingIds.length ? Math.max(...existingIds) : 0) + 1);
+
+  const newWork = {
+    id: nextId,
+    title,
+    year,
+    technique,
+    image: imagePath,
+    order,
+    description
+  };
+
+  cat.works = cat.works || [];
+  cat.works.push(newWork);
+
+  markChanged();
+  renderWorksCategorySelect();
+  renderWorksList();
+  clearWorksForm();
+});
+
+function clearWorksForm() {
+  document.getElementById('works-file').value = '';
+  document.getElementById('works-title').value = '';
+  document.getElementById('works-year').value = '';
+  document.getElementById('works-technique').value = '';
+  document.getElementById('works-description').value = '';
+  document.getElementById('works-order').value = '1';
+  document.getElementById('works-new-cat-id').value = '';
+  document.getElementById('works-new-cat-name').value = '';
+  document.getElementById('works-new-cat-order').value = '';
+  document.getElementById('works-new-category-fields').style.display = 'none';
+}
+
+// ---------- STUDENTS rendering ----------
+
+function renderStudentsList() {
+  const container = document.getElementById('students-list');
+  const items = studentsData.slice().sort((a, b) => a.order - b.order);
+
+  if (!items.length) {
+    container.innerHTML = `<div class="empty-note">Нет работ учеников.</div>`;
+    return;
+  }
+
+  container.innerHTML = `
+    <div class="category-block">
+      <div class="category-head"><h2>Все работы учеников <small>${items.length} шт.</small></h2></div>
+      <div class="items-grid">
+        ${items.map(renderStudentCard).join('')}
+      </div>
+    </div>
+  `;
+
+  container.querySelectorAll('[data-remove-student]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      removeStudent(btn.dataset.studentId);
+    });
+  });
+}
+
+function renderStudentCard(item) {
+  return `
+    <div class="item-card">
+      <button class="remove-btn" data-remove-student data-student-id="${item.id}" title="Удалить">×</button>
+      <img src="${item.image}" alt="${item.title}" onerror="this.style.opacity=0.3">
+      <div class="body">
+        <strong>${item.title}</strong>
+        <span>${item.category} · ${item.year}</span>
+      </div>
+    </div>
+  `;
+}
+
+function removeStudent(id) {
+  studentsData = studentsData.filter(item => item.id !== id);
+  markChanged();
+  renderStudentsList();
+}
+
+// ---------- STUDENTS add ----------
+
+document.getElementById('students-submit').addEventListener('click', () => {
+  const errorEl = document.getElementById('students-error');
+  errorEl.textContent = '';
+
+  const fileInput = document.getElementById('students-file');
+  const title = document.getElementById('students-title').value.trim();
+  const year = document.getElementById('students-year').value.trim();
+  const category = document.getElementById('students-category').value.trim();
+  const technique = document.getElementById('students-technique').value.trim();
+  const description = document.getElementById('students-description').value.trim();
+  const order = Number(document.getElementById('students-order').value) || 10;
+
+  if (!fileInput.files[0]) {
+    errorEl.textContent = 'Выбери файл изображения.';
+    return;
+  }
+  if (!title) {
+    errorEl.textContent = 'Заполни название работы.';
+    return;
+  }
+  if (!category) {
+    errorEl.textContent = 'Заполни категорию.';
+    return;
+  }
+
+  const fileName = fileInput.files[0].name;
+  const imagePath = `images/students/${fileName}`;
+
+  const existingNums = studentsData
+    .map(item => {
+      const match = item.id.match(/(\d+)$/);
+      return match ? Number(match[1]) : 0;
+    });
+  const nextNum = (existingNums.length ? Math.max(...existingNums) : 0) + 1;
+  const newId = `student-${String(nextNum).padStart(2, '0')}`;
+
+  studentsData.push({
+    id: newId,
+    title,
+    year,
+    category,
+    technique,
+    image: imagePath,
+    order,
+    description
+  });
+
+  markChanged();
+  renderStudentsList();
+  clearStudentsForm();
+});
+
+function clearStudentsForm() {
+  document.getElementById('students-file').value = '';
+  document.getElementById('students-title').value = '';
+  document.getElementById('students-year').value = '';
+  document.getElementById('students-category').value = '';
+  document.getElementById('students-technique').value = '';
+  document.getElementById('students-description').value = '';
+  document.getElementById('students-order').value = '10';
+}
+
+// ---------- tabs ----------
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(`panel-${btn.dataset.tab}`).classList.add('active');
+  });
+});
+
+// ---------- download ----------
+
+function download(filename, content) {
+  const blob = new Blob([content], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+document.getElementById('downloadBtn').addEventListener('click', () => {
+  // works.json — выгружаем категории в исходном "плоском" формате объекта
+  download('works.json', JSON.stringify(worksData, null, 2));
+  download('students.json', JSON.stringify(studentsData, null, 2));
+});
+
+loadData();
+</script>
+
+</body>
+</html>

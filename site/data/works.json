@@ -1,0 +1,390 @@
+{
+  "jewelry": {
+    "id": "jewelry",
+    "name": "jewelry",
+    "order": 10,
+    "works": [
+      {
+        "id": "1",
+        "title": "Collection - Thais",
+        "year": "2025",
+        "technique": "Brass/Gilding",
+        "image": "images/works/sergi02.jpg",
+        "order": 1,
+        "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
+      },
+      {
+        "id": "5",
+        "title": "Collection - Birds",
+        "year": "2024",
+        "technique": "Silver/Enamel",
+        "image": "images/works/birds.jpg",
+        "order": 5,
+        "description": "The entire collection can be viewed at the link"
+      },
+      {
+        "id": "3",
+        "title": "Collection - Space artifacts",
+        "year": "2024",
+        "technique": "Silver/Enamel",
+        "image": "images/works/Home0064.jpg",
+        "order": 3,
+        "description": "The entire collection can be viewed at the link"
+      },
+      {
+        "id": "4",
+        "title": "Collection - Space artifacts",
+        "year": "2024",
+        "technique": "Silver/Enamel",
+        "image": "images/works/Home0129.jpg",
+        "order": 4,
+        "description": "The entire collection can be viewed at the link"
+      },
+      {
+        "id": "2",
+        "title": "Collection - Thais",
+        "year": "2025",
+        "technique": "Silver/Gilding",
+        "image": "images/works/braslet01.png",
+        "order": 2,
+        "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
+      },
+      {
+        "id": "6",
+        "title": "Collection - Space artifacts",
+        "year": "2025",
+        "technique": "Silver/Enamel",
+        "image": "images/works/Home0103.jpg",
+        "order": 6,
+        "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
+      },
+      {
+        "id": "7",
+        "title": "Collection - Space artifacts",
+        "year": "2025",
+        "technique": "Silver/Enamel",
+        "image": "images/works/IMG_2796.jpg",
+        "order": 7,
+        "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
+      },
+      {
+        "id": "8",
+        "title": "Collection - VisheGolovy",
+        "year": "2025",
+        "technique": "Silver/Enamel",
+        "image": "images/works/rings01.png",
+        "order": 8,
+        "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
+      }
+    ]
+  },
+  "3d-sculping": {
+    "id": "3d-sculping",
+    "name": "3D sculping",
+    "order": 20,
+    "works": [
+      {
+        "id": "1",
+        "title": "The horseman",
+        "year": "2021",
+        "technique": "Zbrush",
+        "image": "images/works/horse_01.jpg",
+        "order": 1,
+        "description": "The work was done for a television screensaver"
+      },
+      {
+        "id": "2",
+        "title": "The Frog Princess",
+        "year": "2024",
+        "technique": "Zbrush",
+        "image": "images/works/zarevna.jpg",
+        "order": 2,
+        "description": "On the theme of Russian folk tales"
+      },
+      {
+        "id": "3",
+        "title": "Toppi",
+        "year": "2022",
+        "technique": "Zbrush",
+        "image": "images/works/toppi.jpg",
+        "order": 3,
+        "description": "Based on a drawing by Sergio Toppi"
+      },
+      {
+        "id": "4",
+        "title": "Dodo",
+        "year": "2024",
+        "technique": "Zbrush",
+        "image": "images/works/dodo.jpg",
+        "order": 4,
+        "description": "Dodo"
+      },
+      {
+        "id": "5",
+        "title": "The man with the fish",
+        "year": "2025",
+        "technique": "Zbrush",
+        "image": "images/works/fish_man.jpg",
+        "order": 5,
+        "description": "fantasy"
+      },
+      {
+        "id": "6",
+        "title": "Kauk",
+        "year": "2025",
+        "technique": "Zbrush",
+        "image": "images/works/Kauk.jpg",
+        "order": 6,
+        "description": "kauk"
+      },
+      {
+        "id": "7",
+        "title": "Baba Yaga",
+        "year": "2024",
+        "technique": "Zbrush",
+        "image": "images/works/babaYaga.jpg",
+        "order": 7,
+        "description": "Russian folk/Belibin"
+      }
+    ]
+  },
+  "fine_art": {
+    "id": "fine_art",
+    "name": "Fine art",
+    "order": 30,
+    "works": [
+      {
+        "id": "3",
+        "title": "Green apples",
+        "year": "2019",
+        "technique": "Watercolour",
+        "image": "images/works/drawing01.jpg",
+        "order": 3,
+        "description": ""
+      },
+      {
+        "id": "4",
+        "title": "Red apples",
+        "year": "2020",
+        "technique": "Watercolour",
+        "image": "images/works/drawing02.jpg",
+        "order": 4,
+        "description": ""
+      },
+      {
+        "id": "5",
+        "title": "Olives",
+        "year": "2020",
+        "technique": "Watercolour",
+        "image": "images/works/drawing06.jpg",
+        "order": 5,
+        "description": ""
+      },
+      {
+        "id": "8",
+        "title": "Olives",
+        "year": "2018",
+        "technique": "pen",
+        "image": "images/works/drawing03.jpg",
+        "order": 8,
+        "description": ""
+      },
+      {
+        "id": "9",
+        "title": "Olives",
+        "year": "2018",
+        "technique": "pen",
+        "image": "images/works/drawing04.jpg",
+        "order": 9,
+        "description": ""
+      },
+      {
+        "id": "10",
+        "title": "Old wamens",
+        "year": "2016",
+        "technique": "Watercolour",
+        "image": "images/works/babka.jpg",
+        "order": 4,
+        "description": ""
+      },
+      {
+        "id": "11",
+        "title": "The girl on the giraffe",
+        "year": "2017",
+        "technique": "Watercolor",
+        "image": "images/works/devochka-na-Ghirafe.jpg",
+        "order": 5,
+        "description": ""
+      },
+      {
+        "id": "12",
+        "title": "vegetables",
+        "year": "2015",
+        "technique": "Watercolour",
+        "image": "images/works/ovoshi.jpg",
+        "order": 8,
+        "description": ""
+      },
+      {
+        "id": "13",
+        "title": "Illustration",
+        "year": "2017",
+        "technique": "Pen",
+        "image": "images/works/kidnapping.jpg",
+        "order": 20,
+        "description": ""
+      },
+      {
+        "id": "14",
+        "title": "Illustration",
+        "year": "2017",
+        "technique": "",
+        "image": "images/works/pict04.jpg",
+        "order": 14,
+        "description": ""
+      },
+      {
+        "id": "15",
+        "title": "Illustration",
+        "year": "2017",
+        "technique": "",
+        "image": "images/works/pict07.jpg",
+        "order": 15,
+        "description": ""
+      },
+      {
+        "id": "16",
+        "title": "Illustration",
+        "year": "2015",
+        "technique": "Watercolour",
+        "image": "images/works/udod.jpg",
+        "order": 16,
+        "description": ""
+      },
+      {
+        "id": "17",
+        "title": "Bag",
+        "year": "2015",
+        "technique": "Watercolour",
+        "image": "images/works/maket_sumka.jpg",
+        "order": 17,
+        "description": ""
+      },
+      {
+        "id": "18",
+        "title": "The clown girl",
+        "year": "2025",
+        "technique": "Watercolour",
+        "image": "images/works/PhotoStock1882.jpg",
+        "order": 18,
+        "description": ""
+      }
+    ]
+  },
+  "toys": {
+    "id": "toys",
+    "name": "Toys",
+    "order": 40,
+    "works": [
+      {
+        "id": "1",
+        "title": "A pot of porridge",
+        "year": "2021",
+        "technique": "Papier mache/fabric",
+        "image": "images/works/garshok.jpg",
+        "order": 1,
+        "description": "For the illustration of the book \"A Pot of Porridge\""
+      },
+      {
+        "id": "2",
+        "title": "A donkey on a cart",
+        "year": "2022",
+        "technique": "fabric/wood",
+        "image": "images/works/Oslik.jpg",
+        "order": 2,
+        "description": ""
+      },
+      {
+        "id": "3",
+        "title": "Christmas tree toys - Circus",
+        "year": "2019",
+        "technique": "Papier mache",
+        "image": "images/works/cristmas_toys.jpeg",
+        "order": 3,
+        "description": ""
+      },
+      {
+        "id": "4",
+        "title": "A pot of porridge",
+        "year": "2021",
+        "technique": "Papier mache",
+        "image": "images/works/gorshoshek kashi3.jpg",
+        "order": 4,
+        "description": ""
+      },
+      {
+        "id": "5",
+        "title": "A pot of porridge",
+        "year": "2021",
+        "technique": "Papier mache",
+        "image": "images/works/razvarot2_1.jpg",
+        "order": 5,
+        "description": ""
+      },
+      {
+        "id": "6",
+        "title": "Koat",
+        "year": "2021",
+        "technique": "Cloth/wood",
+        "image": "images/works/Koza-bodat-06.jpg",
+        "order": 6,
+        "description": ""
+      },
+      {
+        "id": "7",
+        "title": "Sheep",
+        "year": "2021",
+        "technique": "Cloth/wood",
+        "image": "images/works/Ovza.jpg",
+        "order": 7,
+        "description": ""
+      },
+      {
+        "id": "8",
+        "title": "Sheep",
+        "year": "2021",
+        "technique": "Papier mache/Cloth/wood",
+        "image": "images/works/Ovza_new05.jpg",
+        "order": 8,
+        "description": ""
+      },
+      {
+        "id": "9",
+        "title": "Sheep",
+        "year": "2021",
+        "technique": "Papier mache/Cloth/wood",
+        "image": "images/works/Ovza_new02.jpg",
+        "order": 9,
+        "description": ""
+      },
+      {
+        "id": "10",
+        "title": "Boys",
+        "year": "2021",
+        "technique": "Papier mache",
+        "image": "images/works/boys.jpg",
+        "order": 10,
+        "description": ""
+      },
+      {
+        "id": "11",
+        "title": "Fish",
+        "year": "2021",
+        "technique": "Cloth",
+        "image": "images/works/pianist01.jpg",
+        "order": 11,
+        "description": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Maria Sverdlik - Art Teacher",
+    "description": "Portfolio of an art teacher: teaching philosophy, CV, personal works, student works and contacts."
+  },
+  "header": {
+    "brandInitials": "MS",
+    "brandName": "Maria Sverdlik",
+    "nav": [
+      { "href": "#about", "text": "About" },
+      { "href": "#philosophy", "text": "Philosophy" },
+      { "href": "#cv", "text": "CV" },
+      { "href": "#works", "text": "My Works" },
+      { "href": "#students", "text": "Student Works" },
+      { "href": "#contacts", "text": "Contacts" }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Visual Arts Teacher",
+    "title": "Maria Sverdlik",
+    "lead": "Interdisciplinary artist and educator working across drawing, sculpture, jewelry, 3D, and contemporary visual practice.\nWelcome to my teaching portfolio.",
+    "primaryButton": { "href": "#works", "text": "View Works" },
+    "secondaryButton": { "href": "#contacts", "text": "Get in Touch" },
+    "artImage": "images/site/riba01.jpg",
+    "artAlt": "Colorful art composition"
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "A quiet studio where technique serves freedom.",
+    "text": "I teach drawing, painting and composition to children, teenagers and adults. In class we connect observation, craft and the student's personal interests so the result is not a lucky pretty picture, but a clear step forward.",
+    "facts": [],
+    "portraitImage": "images/site/Masha2.jpg",
+    "portraitAlt": "Teacher portrait",
+    "portraitCaption": "Replace the photo in the images/site folder."
+  },
+  "philosophy": {
+    "eyebrow": "Teaching Philosophy",
+    "heading": "The one who lights the beacons",
+    "text": "Not all students in my classroom intend to become professional artists. That is perfectly natural. My goal is to develop their visual literacy and critical thinking, skills that will serve them no matter what path they choose.\nMy background spans literature, cultural studies, 3D sculpting, jewelry design with hot enamel, and visual storytelling. My work also includes academic research, interdisciplinary projects, and humanities writing. This experience helps me guide senior students not only in creating art, but also in structuring their ideas, reflecting deeply, and articulating their creative processes with clarity.\nI do not divide art into “fine” and “applied,” digital and analog. Instead, I integrate these disciplines into a structured framework. Art has its own grammar: composition, color, form, rhythm, and symbol. I teach students to master this grammar so they can decode the visual world around them, from museum collections and cinema to advertising and contemporary media.\nArt trains essential skills: observing like a scientist, calculating spatial relationships like a mathematician, and decoding meaning like a linguist. In my classroom, I do not showcase my personal style. I teach students to observe deeply, to analyze form, materials, and connections. Through structured, inquiry-based projects, they learn to embrace experimentation, become comfortable with imperfect results, and think through imagery.\nThis approach is especially powerful for senior students in the IB Diploma Programme, where artistic practice is inseparable from research, reflection, and conceptual development.\nThe art room is not a space for relentless competition or empty praise. It is a place to slow down, cultivate emotional intelligence, and treat every student’s thoughts with genuine respect. Students are incredibly sensitive to insincerity. They need honesty, structure, and the assurance that their ideas truly matter.\nIn a world saturated with images and visual noise, an art teacher acts as a thoughtful navigator. My role is modest but essential: to light the beacons. Sometimes, a single well-timed conversation, a technical skill, a relevant research method, or an unexpected cultural connection is enough to help a student take initiative and move forward independently.\nThat is why art is worth teaching.",
+    "principles": []
+  },
+  "cv": {
+    "eyebrow": "CV",
+    "heading": "",
+    "intro": "Interdisciplinary educator and creator working at the intersection of classical fine art, 3D technologies, and high-end craftsmanship. I bridge the gap between traditional artistic foundations and contemporary digital practices, training students not just in technical skills, but in conceptual visual thinking and independent portfolio development.\n\n**AREAS OF EXPERTISE**\n\n**FINE ARTS & BASE**\nDrawing, Painting, Composition, Perspective, Anatomy, Illustration, Graphic Arts\n**3D & DIGITAL PRODUCTION**\n3D Sculpting, CG Art, Digital Production, Commercial Video Production\n**CRAFT & MATERIAL**\nJewelry Design, Cloisonne Enamel, Mixed Media, Sculpture, Pottering\n**MENTORSHIP**\nPortfolio Development, Art-direction, Interdisciplinary programs for teenagers",
+    "timeline": [
+      {
+        "period": "2022 - Present",
+        "title": "Independent Visual Arts Educator",
+        "text": "Curated Interdisciplinary Programs: Designed and executed original educational tracks for teenagers, blending traditional fine art with contemporary creative media.\nSpecialized Workshops: Conducted intensive masterclasses in visual thinking, advanced perspective, composition, and authentic cloisonne enamel techniques.\nMentorship: Guided students through portfolio development for international creative — admissions"
+      },
+      {
+        "period": "2020 – Present",
+        "title": "Freelance CG Artist & CG Producer",
+        "text": "Digital Sculpting & Assets: Developed high-fidelity 3D sculpts and assets for commercial, gaming, and artistic projects.\nCreative Production: Managed the production pipeline for commercial videos, international marketing campaigns, and branding concepts.\nPackaging Illustration: Created bespoke illustrations and concept art for premium product packaging"
+      },
+      {
+        "period": "2015–2020",
+        "title": "Founder & Studio Artist - Private Art Studio",
+        "text": "Business & Art Direction: Launched and managed an independent, self-sustaining art studio. \nCollection Launch: Designed, manufactured, and marketed author's jewelry collections and mixed-media sculptures.\nCommunity Building: Hosted regular studio workshops, creating a hub for local artists and art enthusiasts."
+      }
+    ]
+  },
+  "works": {
+    "eyebrow": "My Works",
+    "heading": "Personal artistic practice."
+  },
+  "students": {
+    "eyebrow": "Student Works",
+    "heading": "Different hands, different solutions."
+  },
+  "contacts": {
+    "eyebrow": "Contacts",
+    "heading": "Let's talk about lessons, a portfolio or a creative project.",
+    "intro": "Feel free to message me, send an email or leave a short enquiry.",
+    "email": "sverdlikm@mail.ru",
+    "phone": "+7 707 698 70 34",
+    "availability": "Online and in person",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "What should I call you",
+      "contactLabel": "Contact",
+      "contactPlaceholder": "Email or messenger",
+      "messageLabel": "Message",
+      "messagePlaceholder": "What would you like to discuss",
+      "submitText": "Send"
+    }
+  }
+}

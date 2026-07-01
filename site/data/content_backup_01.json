@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "Maria Sverdlik — Art Teacher",
+    "description": "Portfolio of an art teacher: teaching philosophy, CV, personal works, student works and contacts."
+  },
+  "header": {
+    "brandInitials": "MS",
+    "brandName": "Maria Sverdlik",
+    "nav": [
+      { "href": "#about", "text": "About" },
+      { "href": "#philosophy", "text": "Philosophy" },
+      { "href": "#cv", "text": "CV" },
+      { "href": "#works", "text": "My Works" },
+      { "href": "#students", "text": "Student Works" },
+      { "href": "#contacts", "text": "Contacts" }
+    ]
+  },
+  "hero": {
+     "eyebrow": "",
+    "title": "Maria Sverdlik",
+    "lead": "Art Educator • Artist • 3D Sculptor",
+    "primaryButton": { "href": "#works", "text": "View Works" },
+    "secondaryButton": { "href": "#contacts", "text": "Get in Touch" },
+    "artImage": "images/site/riba01.jpg",
+    "artAlt": "Colorful art composition"
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "A quiet studio where technique serves freedom.",
+    "text": "I teach drawing, painting and composition to children, teenagers and adults. In class we connect observation, craft and the student's personal interests — so the result is not a lucky pretty picture, but a clear step forward.",
+    "facts": [
+      { "value": "12+", "label": "years of practice" },
+      { "value": "4", "label": "disciplines" },
+      { "value": "1:1", "label": "individual pace" }
+    ],
+    "portraitImage": "images/site/Masha2.jpg",
+    "portraitAlt": "Teacher portrait",
+    "portraitCaption": "Replace the photo in the images/site folder."
+  },
+  "philosophy": {
+    "eyebrow": "Philosophy",
+    "heading": "Drawing begins with attention.",
+    "principles": [
+      {
+        "number": "01",
+        "title": "See the form",
+        "text": "We learn to break objects down into volume, light, silhouette and rhythm — not to copy the surface."
+      },
+      {
+        "number": "02",
+        "title": "Embrace the attempt",
+        "text": "Drafts, quick sketches and mistakes become part of the living process of learning."
+      },
+      {
+        "number": "03",
+        "title": "Build the craft",
+        "text": "Materials, composition, tone, colour and line gradually become a reliable set of tools."
+      },
+      {
+        "number": "04",
+        "title": "Keep the voice",
+        "text": "The teacher's job is to help the student become more precise — without making their work look the same."
+      }
+    ]
+  },
+  "cv": {
+    "eyebrow": "CV",
+    "heading": "Experience at a glance.",
+    "intro": "This section is built as an editable timeline. Real dates, exhibitions, education and projects can be added later.",
+    "timeline": [
+      {
+        "period": "2012–2016",
+        "title": "Art Education",
+        "text": "Academic drawing, painting, composition, art history."
+      },
+      {
+        "period": "2017–2021",
+        "title": "Teaching Practice",
+        "text": "Individual lessons, small groups, portfolio preparation and creative projects."
+      },
+      {
+        "period": "2022–2026",
+        "title": "Original Courses",
+        "text": "Courses in watercolour, graphics, composition and visual thinking."
+      }
+    ]
+  },
+  "works": {
+    "eyebrow": "My Works",
+    "heading": "Personal artistic practice."
+  },
+  "students": {
+    "eyebrow": "Student Works",
+    "heading": "Different hands, different solutions."
+  },
+  "contacts": {
+    "eyebrow": "Contacts",
+    "heading": "Let's talk about lessons, a portfolio or a creative project.",
+    "intro": "Feel free to message me, send an email or leave a short enquiry.",
+    "email": "hello@example.com",
+    "phone": "+7 000 000 00 00",
+    "availability": "Online and in person",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "What should I call you",
+      "contactLabel": "Contact",
+      "contactPlaceholder": "Email or messenger",
+      "messageLabel": "Message",
+      "messagePlaceholder": "What would you like to discuss",
+      "submitText": "Send"
+    }
+  }
+}

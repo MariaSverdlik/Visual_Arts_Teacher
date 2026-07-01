@@ -1,0 +1,262 @@
+{
+  "jewelry": {
+    "id": "jewelry",
+    "name": "jewelry",
+    "order": 10,
+    "works": [
+      {
+        "id": "1",
+        "title": "Collection - Thais",
+        "year": "2025",
+        "technique": "Brass/Gilding",
+        "image": "images/works/sergi02.jpg",
+        "order": 1,
+        "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
+      },
+      {
+        "id": "5",
+        "title": "Collection - Birds",
+        "year": "2024",
+        "technique": "Silver/Enamel",
+        "image": "images/works/birds.jpg",
+        "order": 5,
+        "description": "The entire collection can be viewed at the link"
+      },
+      {
+        "id": "3",
+        "title": "Collection - Space artifacts",
+        "year": "2024",
+        "technique": "Silver/Enamel",
+        "image": "images/works/Home0064.jpg",
+        "order": 3,
+        "description": "The entire collection can be viewed at the link"
+      },
+      {
+        "id": "4",
+        "title": "Collection - Space artifacts",
+        "year": "2024",
+        "technique": "Silver/Enamel",
+        "image": "images/works/Home0129.jpg",
+        "order": 4,
+        "description": "The entire collection can be viewed at the link"
+      },
+      {
+        "id": "2",
+        "title": "Collection - Thais",
+        "year": "2025",
+        "technique": "Silver/Gilding",
+        "image": "images/works/braslet01.png",
+        "order": 2,
+        "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
+      }
+    ]
+  },
+  "3d-sculping": {
+    "id": "3d-sculping",
+    "name": "3D sculping",
+    "order": 20,
+    "works": [
+      {
+        "id": "1",
+        "title": "The horseman",
+        "year": "2021",
+        "technique": "Zbrush",
+        "image": "images/works/horse_01.jpg",
+        "order": 1,
+        "description": "The work was done for a television screensaver"
+      },
+      {
+        "id": "2",
+        "title": "The Frog Princess",
+        "year": "2024",
+        "technique": "Zbrush",
+        "image": "images/works/zarevna.jpg",
+        "order": 2,
+        "description": "On the theme of Russian folk tales"
+      },
+      {
+        "id": "3",
+        "title": "Toppi",
+        "year": "2022",
+        "technique": "Zbrush",
+        "image": "images/works/toppi.jpg",
+        "order": 3,
+        "description": "Based on a drawing by Sergio Toppi"
+      },
+      {
+        "id": "4",
+        "title": "Dodo",
+        "year": "2024",
+        "technique": "Zbrush",
+        "image": "images/works/dodo.jpg",
+        "order": 4,
+        "description": "Dodo"
+      },
+      {
+        "id": "5",
+        "title": "The man with the fish",
+        "year": "2025",
+        "technique": "Zbrush",
+        "image": "images/works/fish_man.jpg",
+        "order": 5,
+        "description": "fantasy"
+      },
+      {
+        "id": "6",
+        "title": "Kauk",
+        "year": "2025",
+        "technique": "Zbrush",
+        "image": "images/works/Kauk.jpg",
+        "order": 6,
+        "description": "kauk"
+      }
+    ]
+  },
+  "fine_art": {
+    "id": "fine_art",
+    "name": "Fine art",
+    "order": 30,
+    "works": [
+      {
+        "id": "1",
+        "title": "The Horseman",
+        "year": "2026",
+        "technique": "Watercolour",
+        "image": "images/works/vsadnik.jpg",
+        "order": 1,
+        "description": ""
+      },
+      {
+        "id": "2",
+        "title": "Stump",
+        "year": "2019",
+        "technique": "Watercolour",
+        "image": "images/works/Pen'.jpg",
+        "order": 2,
+        "description": ""
+      },
+      {
+        "id": "3",
+        "title": "Green apples",
+        "year": "2019",
+        "technique": "Watercolour",
+        "image": "images/works/drawing01.jpg",
+        "order": 3,
+        "description": ""
+      },
+      {
+        "id": "4",
+        "title": "Red apples",
+        "year": "2020",
+        "technique": "Watercolour",
+        "image": "images/works/drawing02.jpg",
+        "order": 4,
+        "description": ""
+      },
+      {
+        "id": "5",
+        "title": "Olives",
+        "year": "2020",
+        "technique": "Watercolour",
+        "image": "images/works/drawing06.jpg",
+        "order": 5,
+        "description": ""
+      },
+      {
+        "id": "6",
+        "title": "Olives",
+        "year": "2018",
+        "technique": "Watercolour",
+        "image": "images/works/Dolli_&_Molli7.jpg",
+        "order": 6,
+        "description": "Illustration for a children's book"
+      },
+      {
+        "id": "7",
+        "title": "Olives",
+        "year": "2018",
+        "technique": "Watercolour",
+        "image": "images/works/Chudishe.jpg",
+        "order": 7,
+        "description": "Illustration for a children's book"
+      },
+      {
+        "id": "8",
+        "title": "Olives",
+        "year": "2018",
+        "technique": "pen",
+        "image": "images/works/drawing03.jpg",
+        "order": 8,
+        "description": ""
+      },
+      {
+        "id": "9",
+        "title": "Olives",
+        "year": "2018",
+        "technique": "pen",
+        "image": "images/works/drawing04.jpg",
+        "order": 9,
+        "description": ""
+      },
+      {
+        "id": "10",
+        "title": "Dragons",
+        "year": "2018",
+        "technique": "Watercolour",
+        "image": "images/works/Monstr-crop.jpg",
+        "order": 10,
+        "description": ""
+      }
+    ]
+  },
+  "toys": {
+    "id": "toys",
+    "name": "Toys",
+    "order": 40,
+    "works": [
+      {
+        "id": "1",
+        "title": "A pot of porridge",
+        "year": "2021",
+        "technique": "Papier mache/fabric",
+        "image": "images/works/garshok.jpg",
+        "order": 1,
+        "description": "For the illustration of the book \"A Pot of Porridge\""
+      },
+      {
+        "id": "2",
+        "title": "A donkey on a cart",
+        "year": "2022",
+        "technique": "fabric/wood",
+        "image": "images/works/Oslik.jpg",
+        "order": 2,
+        "description": ""
+      },
+      {
+        "id": "3",
+        "title": "Christmas tree toys - Circus",
+        "year": "2019",
+        "technique": "Papier mache",
+        "image": "images/works/cristmas_toys.jpeg",
+        "order": 3,
+        "description": ""
+      }
+    ]
+  },
+  "sculpting": {
+    "id": "sculpting",
+    "name": "Sculpting",
+    "order": 50,
+    "works": [
+      {
+        "id": "1",
+        "title": "Сow",
+        "year": "2025",
+        "technique": "red clay",
+        "image": "images/works/korova.jpg",
+        "order": 1,
+        "description": "###"
+      }
+    ]
+  }
+}

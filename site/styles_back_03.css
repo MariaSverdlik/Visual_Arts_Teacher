@@ -1,0 +1,803 @@
+/* ============================================================
+   ДИЗАЙН-ТОКЕНЫ
+   Все цвета и типографика настраиваются здесь
+   ============================================================ */
+
+:root {
+
+  /* --- Цвета: фоны --- */
+  --color-bg-page:        #ffffff;                        /* фон всей страницы */
+  --color-bg-header:      #A4A9B0;                        /* фон шапки */
+  --color-bg-card:        rgba(255, 250, 241, 0.72);      /* фон карточек, формы */
+  --color-bg-input:       #9bc0cb;                        /* фон полей ввода и диалога */
+  --color-bg-button-nav:  rgba(209, 232, 241, 0.8);       /* фон кнопки бургера */
+  --color-bg-nav-mobile:  #ffffff;                        /* фон мобильного меню */
+  --color-bg-caption:     rgba(30, 31, 28, 0.78);         /* фон подписи на фото */
+  --color-bg-dialog-close: rgba(30, 31, 28, 0.78);        /* фон кнопки закрытия диалога */
+  --color-bg-overlay:     rgba(30, 31, 28, 0.58);         /* затемнение за диалогом */
+
+  /* --- Цвета: текст --- */
+  --color-text-primary:   #1e1f1c;                        /* основной текст, заголовки */
+  --color-text-secondary: #E8EEF2;                        /* приглушённый текст, параграфы */
+  --color-text-lead:      #3c3932;                        /* лид-текст на главном экране */
+  --color-text-accent:    #606F91;                        /* eyebrow, номера принципов, скроллбар */
+  --color-text-date:      #345c7a;                        /* даты в timeline */
+  --color-text-nav:       #E8EEF2;                        /* ссылки в навигации */
+  --color-text-nav-active: #1e1f1c;                       /* активная/hover ссылка в навигации */
+  --color-text-caption:   #9bc0cb;                        /* текст подписи на фото */
+  --color-text-on-dark:   #9bc0cb;                        /* текст на тёмных кнопках */
+
+  /* --- Цвета: границы и тени --- */
+  --color-border:         rgba(30, 31, 28, 0.14);         /* границы карточек, инпутов */
+  --color-border-header:  rgba(30, 31, 28, 0.08);         /* нижняя граница шапки */
+  --color-border-dialog-close: rgba(255, 250, 241, 0.45); /* граница кнопки закрытия */
+  --color-shadow:         0 22px 60px rgba(36, 29, 22, 0.16); /* тень карточек */
+
+  /* --- Типографика: шрифты --- */
+  --font-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* --- Типографика: размеры --- */
+  --font-size-eyebrow:    12px;
+  --font-size-h3:         18px;
+  --font-size-body:       clamp(15px, 1.6vw, 18px);
+  --font-size-small:      13px;
+  --font-size-nav:        14px;
+  --font-size-nav-mobile: 20px;
+  --font-size-fact:       26px;
+  --font-size-h1:         clamp(52px, 10vw, 104px);
+  --font-size-h2:         clamp(36px, 7vw, 78px);
+  --font-size-h2-gallery: clamp(34px, 5vw, 62px);
+  --font-size-lead:       clamp(18px, 2.2vw, 25px);
+
+  /* --- Типографика: насыщенность --- */
+  --font-weight-normal:   400;
+  --font-weight-medium:   500;
+  --font-weight-bold:     700;
+  --font-weight-black:    800;
+
+  /* --- Прочее --- */
+  --header-height:        72px;
+}
+
+/* ============================================================
+   СБРОС И БАЗА
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  font-family: var(--font-base);
+  color: var(--color-text-primary);
+  background: var(--color-bg-page);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    linear-gradient(120deg, rgba(184, 95, 73, 0.08), transparent 34%),
+    linear-gradient(280deg, rgba(52, 92, 122, 0.08), transparent 30%),
+    var(--color-bg-page);
+}
+
+body.nav-open {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+/* ============================================================
+   ШАПКА
+   ============================================================ */
+
+.site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(18px, 4vw, 56px);
+  border-bottom: 1px solid var(--color-border-header);
+  background: var(--color-bg-header);
+  backdrop-filter: blur(18px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: var(--font-weight-black);
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--color-text-primary);
+  background: var(--color-text-primary);
+  color: var(--color-bg-page);
+  font-family: var(--font-base);
+  line-height: 1;
+}
+
+.brand-text {
+  white-space: nowrap;
+}
+
+.site-nav {
+  display: none;
+}
+
+.site-nav a {
+  color: var(--color-text-nav);
+  font-size: var(--font-size-nav);
+  font-weight: var(--font-weight-bold);
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--color-text-nav-active);
+}
+
+.nav-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-button-nav);
+}
+
+.nav-toggle span {
+  width: 20px;
+  height: 2px;
+  background: var(--color-text-primary);
+}
+
+.nav-toggle span + span {
+  margin-top: -13px;
+}
+
+/* ============================================================
+   СТРУКТУРА ЭКРАНОВ
+   ============================================================ */
+
+.snap-root {
+  min-height: 100svh;
+}
+
+.screen {
+  min-height: 100svh;
+  height: 100svh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-top: var(--header-height);
+  overflow: hidden;
+}
+
+.screen-inner {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 54px) 0;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* На мобильных разделы about и philosophy могут расти за пределы экрана */
+@media (max-width: 819px) {
+  .about-screen,
+  .philosophy-screen {
+    height: auto;
+    overflow: visible;
+  }
+
+  .about-screen .screen-inner,
+  .philosophy-screen .screen-inner {
+    overflow: visible;
+    min-height: 0;
+    height: auto;
+    flex: none;
+  }
+}
+
+.gallery-screen .screen-inner {
+  overflow: hidden;
+}
+
+/* ============================================================
+   ЛЭЙАУТЫ
+   ============================================================ */
+
+.hero-layout,
+.two-column,
+.cv-layout,
+.contacts-layout {
+  display: grid;
+  gap: clamp(24px, 5vw, 72px);
+  align-items: center;
+  height: 100%;
+}
+
+.hero-layout {
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+/* ============================================================
+   ТИПОГРАФИКА
+   ============================================================ */
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-weight: var(--font-weight-bold);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: var(--font-size-h1);
+  max-width: 760px;
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-size: var(--font-size-h2);
+  max-width: 840px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: var(--font-size-h3);
+}
+
+p {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body);
+  line-height: 1.62;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--color-text-accent);
+  font-size: var(--font-size-eyebrow);
+  font-weight: var(--font-weight-black);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   ГЛАВНЫЙ ЭКРАН
+   ============================================================ */
+
+.hero-lead {
+  max-width: 610px;
+  color: var(--color-text-lead);
+  font-size: var(--font-size-lead);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid var(--color-text-primary);
+  font-weight: var(--font-weight-black);
+  cursor: pointer;
+}
+
+.button-primary {
+  background: var(--color-text-primary);
+  color: var(--color-text-on-dark);
+}
+
+.button-secondary {
+  background: rgba(255, 250, 241, 0.6);
+}
+
+.hero-art {
+  min-height: 260px;
+  align-self: stretch;
+  box-shadow: var(--color-shadow);
+  overflow: hidden;
+}
+
+.hero-art img,
+.portrait-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================================
+   РАЗДЕЛ ABOUT
+   ============================================================ */
+
+.section-copy {
+  max-width: 650px;
+}
+
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.fact-grid div,
+.principles article,
+.timeline article,
+.art-card,
+.contact-form {
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+}
+
+.fact-grid div {
+  padding: 16px;
+}
+
+.fact-grid strong {
+  display: block;
+  font-size: var(--font-size-fact);
+}
+
+.fact-grid span {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  overflow-wrap: anywhere;
+}
+
+.portrait-card {
+  position: relative;
+  margin: 0;
+  min-height: min(32svh, 360px);
+  overflow: hidden;
+  box-shadow: var(--color-shadow);
+}
+
+.portrait-card figcaption {
+  position: absolute;
+  inset: auto 14px 14px;
+  padding: 10px 12px;
+  background: var(--color-bg-caption);
+  color: var(--color-text-caption);
+  font-size: var(--font-size-small);
+}
+
+/* ============================================================
+   РАЗДЕЛ PHILOSOPHY
+   ============================================================ */
+
+.section-heading {
+  margin-bottom: clamp(22px, 4vw, 46px);
+}
+
+.philosophy-screen .screen-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  flex: 1;
+  align-content: stretch;
+}
+
+.principles article {
+  padding: clamp(18px, 3vw, 30px);
+}
+
+.principles span {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: var(--color-text-accent);
+  font-weight: var(--font-weight-black);
+}
+
+/* ============================================================
+   РАЗДЕЛ CV
+   ============================================================ */
+
+.timeline {
+  display: grid;
+  gap: 12px;
+}
+
+.timeline article {
+  padding: clamp(18px, 3vw, 28px);
+}
+
+.timeline time {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--color-text-date);
+  font-weight: var(--font-weight-black);
+}
+
+/* ============================================================
+   ГАЛЕРЕИ (works, students)
+   ============================================================ */
+
+.gallery-layout {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 18px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-top {
+  display: grid;
+  gap: 16px;
+  align-items: end;
+}
+
+.gallery-top h2 {
+  margin-bottom: 0;
+  font-size: var(--font-size-h2-gallery);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-button {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-black);
+  cursor: pointer;
+}
+
+.filter-button.active {
+  border-color: var(--color-text-primary);
+  background: var(--color-text-primary);
+  color: var(--color-text-on-dark);
+}
+
+.gallery-scroll {
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-color: var(--color-text-accent) var(--color-border-header);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding-bottom: 24px;
+}
+
+.art-card {
+  display: grid;
+  grid-template-rows: minmax(220px, 32svh) auto;
+  overflow: hidden;
+  text-align: left;
+  cursor: pointer;
+}
+
+.art-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.art-card:hover img {
+  transform: scale(1.035);
+}
+
+.art-card-body {
+  padding: 14px;
+}
+
+.art-card-body p {
+  margin-bottom: 0;
+  font-size: var(--font-size-small);
+}
+
+/* ============================================================
+   РАЗДЕЛ CONTACTS
+   ============================================================ */
+
+.contacts-layout {
+  align-self: center;
+}
+
+.contact-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 26px;
+  font-style: normal;
+}
+
+.contact-list a,
+.contact-list span {
+  width: fit-content;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-black);
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  padding: clamp(18px, 3vw, 30px);
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-black);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-input);
+  padding: 13px 14px;
+  color: var(--color-text-primary);
+  resize: vertical;
+}
+
+/* ============================================================
+   ДИАЛОГ
+   ============================================================ */
+
+.art-dialog {
+  width: min(920px, calc(100% - 28px));
+  border: 0;
+  padding: 0;
+  background: var(--color-bg-input);
+  color: var(--color-text-primary);
+  box-shadow: var(--color-shadow);
+}
+
+.art-dialog::backdrop {
+  background: var(--color-bg-overlay);
+}
+
+.art-dialog[open] {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.art-dialog img {
+  width: 100%;
+  max-height: 62svh;
+  object-fit: cover;
+}
+
+.art-dialog div {
+  padding: 22px;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-border-dialog-close);
+  background: var(--color-bg-dialog-close);
+  color: var(--color-text-on-dark);
+  cursor: pointer;
+}
+
+/* ============================================================
+   МЕДИА-ЗАПРОСЫ
+   ============================================================ */
+
+@media (max-width: 819px) {
+  .site-nav {
+    position: fixed;
+    inset: var(--header-height) 0 0;
+    z-index: 19;
+    height: calc(100svh - var(--header-height));
+    overflow-y: auto;
+    display: grid;
+    align-content: start;
+    gap: 4px;
+    padding: 18px;
+    background: var(--color-bg-nav-mobile);
+    transform: translateX(100%);
+    transition: transform 180ms ease;
+    box-shadow: var(--color-shadow);
+  }
+
+  .site-nav.open {
+    transform: translateX(0);
+  }
+
+  .site-nav a {
+    padding: 16px 4px;
+    border-bottom: 1px solid var(--color-border);
+    font-size: var(--font-size-nav-mobile);
+  }
+
+  .brand-text {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .principles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .fact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fact-grid div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: baseline;
+    gap: 10px;
+    min-height: 58px;
+  }
+
+  .fact-grid strong {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 820px) {
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(14px, 2vw, 26px);
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .hero-layout,
+  .two-column,
+  .cv-layout,
+  .contacts-layout {
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  }
+
+  .hero-layout {
+    grid-template-rows: none;
+  }
+
+  .gallery-top {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .art-dialog[open] {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+
+  .art-dialog img {
+    height: 72svh;
+    max-height: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (orientation: landscape) and (max-height: 620px) {
+  :root {
+    --header-height: 58px;
+  }
+
+  .screen-inner {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  h1 {
+    margin-bottom: 12px;
+    font-size: clamp(40px, 7vw, 64px);
+  }
+
+  h2 {
+    font-size: clamp(30px, 5vw, 54px);
+  }
+
+  .hero-lead {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .hero-actions {
+    margin-top: 14px;
+  }
+
+  .button {
+    min-height: 38px;
+    padding: 0 14px;
+  }
+
+  .hero-art,
+  .portrait-card {
+    min-height: 170px;
+  }
+
+  .art-card {
+    grid-template-rows: minmax(150px, 38svh) auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
