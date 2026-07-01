@@ -145,6 +145,33 @@
         "image": "images/works/babaYaga.jpg",
         "order": 7,
         "description": "Russian folk/Belibin"
+      },
+      {
+        "id": "8",
+        "title": "Immigration",
+        "year": "2026",
+        "technique": "Zbrush",
+        "image": "images/works/immig_01",
+        "order": 8,
+        "description": ""
+      },
+      {
+        "id": "9",
+        "title": "Immigration",
+        "year": "2026",
+        "technique": "Zbrush",
+        "image": "images/works/immig_04",
+        "order": 9,
+        "description": ""
+      },
+      {
+        "id": "910",
+        "title": "Immigration",
+        "year": "2026",
+        "technique": "Zbrush",
+        "image": "images/works/immig_06",
+        "order": 10,
+        "description": ""
       }
     ]
   },
