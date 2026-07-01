@@ -227,11 +227,20 @@
       },
       {
         "id": "10",
+        "title": "Fish",
+        "year": "2018",
+        "technique": "pen",
+        "image": "images/works/drawing05.jpg",
+        "order": 10,
+        "description": ""
+      },
+      {
+        "id": "11",
         "title": "Old wamens",
         "year": "2016",
         "technique": "Watercolour",
         "image": "images/works/babka.jpg",
-        "order": 4,
+        "order": 11,
         "description": ""
       },
       {
@@ -240,7 +249,7 @@
         "year": "2015",
         "technique": "Watercolour",
         "image": "images/works/ovoshi.jpg",
-        "order": 8,
+        "order": 12,
         "description": ""
       },
       {
@@ -249,7 +258,7 @@
         "year": "2017",
         "technique": "Pen",
         "image": "images/works/kidnapping.jpg",
-        "order": 20,
+        "order": 13,
         "description": ""
       },
       {
