@@ -151,7 +151,7 @@
         "title": "Immigration",
         "year": "2026",
         "technique": "Zbrush",
-        "image": "images/works/immig_01",
+        "image": "images/works/immig_01.jpg",
         "order": 8,
         "description": ""
       },
@@ -160,16 +160,16 @@
         "title": "Immigration",
         "year": "2026",
         "technique": "Zbrush",
-        "image": "images/works/immig_04",
+        "image": "images/works/immig_04.jpg",
         "order": 9,
         "description": ""
       },
       {
-        "id": "910",
+        "id": "10",
         "title": "Immigration",
         "year": "2026",
         "technique": "Zbrush",
-        "image": "images/works/immig_06",
+        "image": "images/works/immig_06.jpg",
         "order": 10,
         "description": ""
       }
@@ -209,7 +209,7 @@
       },
       {
         "id": "8",
-        "title": "Olives",
+        "title": "Flowers",
         "year": "2018",
         "technique": "pen",
         "image": "images/works/drawing03.jpg",
@@ -218,7 +218,7 @@
       },
       {
         "id": "9",
-        "title": "Olives",
+        "title": "Tree",
         "year": "2018",
         "technique": "pen",
         "image": "images/works/drawing04.jpg",
@@ -232,15 +232,6 @@
         "technique": "Watercolour",
         "image": "images/works/babka.jpg",
         "order": 4,
-        "description": ""
-      },
-      {
-        "id": "11",
-        "title": "The girl on the giraffe",
-        "year": "2017",
-        "technique": "Watercolor",
-        "image": "images/works/devochka-na-Ghirafe.jpg",
-        "order": 5,
         "description": ""
       },
       {
@@ -280,30 +271,12 @@
         "description": ""
       },
       {
-        "id": "16",
-        "title": "Illustration",
-        "year": "2015",
-        "technique": "Watercolour",
-        "image": "images/works/udod.jpg",
-        "order": 16,
-        "description": ""
-      },
-      {
         "id": "17",
         "title": "Bag",
         "year": "2015",
         "technique": "Watercolour",
         "image": "images/works/maket_sumka.jpg",
         "order": 17,
-        "description": ""
-      },
-      {
-        "id": "18",
-        "title": "The clown girl",
-        "year": "2025",
-        "technique": "Watercolour",
-        "image": "images/works/PhotoStock1882.jpg",
-        "order": 18,
         "description": ""
       }
     ]
@@ -332,15 +305,6 @@
         "description": ""
       },
       {
-        "id": "3",
-        "title": "Christmas tree toys - Circus",
-        "year": "2019",
-        "technique": "Papier mache",
-        "image": "images/works/cristmas_toys.jpeg",
-        "order": 3,
-        "description": ""
-      },
-      {
         "id": "4",
         "title": "A pot of porridge",
         "year": "2021",
@@ -365,15 +329,6 @@
         "technique": "Cloth/wood",
         "image": "images/works/Koza-bodat-06.jpg",
         "order": 6,
-        "description": ""
-      },
-      {
-        "id": "7",
-        "title": "Sheep",
-        "year": "2021",
-        "technique": "Cloth/wood",
-        "image": "images/works/Ovza.jpg",
-        "order": 7,
         "description": ""
       },
       {

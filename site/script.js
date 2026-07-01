@@ -124,14 +124,14 @@ const galleries = {
     gallery: document.querySelector('[data-gallery="works"]'),
     filters: document.querySelector('[data-filters="works"]'),
     items: [],
-    activeCategory: "Все"
+    activeCategory: "All"
   },
   students: {
     dataUrl: "data/students.json",
     gallery: document.querySelector('[data-gallery="students"]'),
     filters: document.querySelector('[data-filters="students"]'),
     items: [],
-    activeCategory: "Все"
+    activeCategory: "All"
   }
 };
 
@@ -243,8 +243,8 @@ async function loadGallery(key) {
 
 function renderFilters(key) {
   const state = galleries[key];
-  // Формируем список категорий из структуры данных + "Все"
-  const categories = ["Все", ...state.categories.map(cat => cat.name)];
+  // Формируем список категорий из структуры данных + "All"
+  const categories = ["All", ...state.categories.map(cat => cat.name)];
 
   state.filters.innerHTML = categories
     .map((category) => {
@@ -265,7 +265,7 @@ function renderFilters(key) {
 
 function renderGallery(key) {
   const state = galleries[key];
-  const items = state.activeCategory === "Все"
+  const items = state.activeCategory === "All"
     ? state.items
     : state.items.filter((item) => item.category === state.activeCategory);
 
