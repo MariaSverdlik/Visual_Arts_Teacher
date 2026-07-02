@@ -75,6 +75,33 @@
         "image": "images/works/rings01.png",
         "order": 8,
         "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
+      },
+      {
+        "id": "9",
+        "title": "Collection - Thais",
+        "year": "2025",
+        "technique": "Silver/Enamel",
+        "image": "images/works/1krest2.jpg",
+        "order": 9,
+        "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
+      },
+      {
+        "id": "10",
+        "title": "Collection - Thais",
+        "year": "2025",
+        "technique": "Silver/Enamel",
+        "image": "images/works/2kresta.jpg",
+        "order": 10,
+        "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
+      },
+      {
+        "id": "11",
+        "title": "Collection - Thais",
+        "year": "2025",
+        "technique": "Silver/Enamel",
+        "image": "images/works/gospazha.jpg",
+        "order": 11,
+        "description": ""
       }
     ]
   },
@@ -172,6 +199,15 @@
         "image": "images/works/immig_06.jpg",
         "order": 10,
         "description": ""
+      },
+      {
+        "id": "11",
+        "title": "Immigration",
+        "year": "2023",
+        "technique": "Zbrush",
+        "image": "images/works/Pokras-1.jpg",
+        "order": 11,
+        "description": ""
       }
     ]
   },
@@ -223,15 +259,6 @@
         "technique": "pen",
         "image": "images/works/drawing04.jpg",
         "order": 9,
-        "description": ""
-      },
-      {
-        "id": "10",
-        "title": "Fish",
-        "year": "2018",
-        "technique": "pen",
-        "image": "images/works/drawing05.jpg",
-        "order": 10,
         "description": ""
       },
       {
@@ -341,30 +368,12 @@
         "description": ""
       },
       {
-        "id": "8",
-        "title": "Sheep",
-        "year": "2021",
-        "technique": "Papier mache/Cloth/wood",
-        "image": "images/works/Ovza_new05.jpg",
-        "order": 8,
-        "description": ""
-      },
-      {
         "id": "9",
         "title": "Sheep",
         "year": "2021",
         "technique": "Papier mache/Cloth/wood",
         "image": "images/works/Ovza_new02.jpg",
         "order": 9,
-        "description": ""
-      },
-      {
-        "id": "10",
-        "title": "Boys",
-        "year": "2021",
-        "technique": "Papier mache",
-        "image": "images/works/boys.jpg",
-        "order": 10,
         "description": ""
       },
       {
