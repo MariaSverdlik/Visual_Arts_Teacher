@@ -93,15 +93,6 @@
         "image": "images/works/2kresta.jpg",
         "order": 10,
         "description": "The entire collection can be viewed at the link - https://www.instagram.com/thais.jewel/"
-      },
-      {
-        "id": "11",
-        "title": "Collection - Thais",
-        "year": "2025",
-        "technique": "Silver/Enamel",
-        "image": "images/works/gospazha.jpg",
-        "order": 11,
-        "description": ""
       }
     ]
   },
@@ -208,6 +199,15 @@
         "image": "images/works/Pokras-1.jpg",
         "order": 11,
         "description": ""
+      },
+      {
+        "id": "12",
+        "title": "Zoricto",
+        "year": "2023",
+        "technique": "Zbrush",
+        "image": "images/works/z_crop.png",
+        "order": 12,
+        "description": ""
       }
     ]
   },
@@ -307,12 +307,66 @@
         "description": ""
       },
       {
-        "id": "17",
+        "id": "16",
         "title": "Bag",
         "year": "2015",
         "technique": "Watercolour",
         "image": "images/works/maket_sumka.jpg",
+        "order": 16,
+        "description": ""
+      },
+      {
+        "id": "17",
+        "title": "Art",
+        "year": "2015",
+        "technique": "Pen",
+        "image": "images/works/art_01.jpg",
         "order": 17,
+        "description": ""
+      },
+      {
+        "id": "18",
+        "title": "Art",
+        "year": "2015",
+        "technique": "Pen",
+        "image": "images/works/art_02.jpg",
+        "order": 18,
+        "description": ""
+      },
+      {
+        "id": "19",
+        "title": "Art",
+        "year": "2015",
+        "technique": "Pen",
+        "image": "images/works/art_03.jpg",
+        "order": 19,
+        "description": ""
+      },
+      {
+        "id": "19",
+        "title": "Art",
+        "year": "2015",
+        "technique": "Pen",
+        "image": "images/works/art_04.jpg",
+        "order": 19,
+        "description": ""
+      },
+      {
+        "id": "20",
+        "title": "Art",
+        "year": "2015",
+        "technique": "Pen",
+        "image": "images/works/art_05.jpg",
+        "order": 20,
+        "description": ""
+      },
+      {
+        "id": "21",
+        "title": "Art",
+        "year": "2015",
+        "technique": "Pen",
+        "image": "images/works/art_06.jpg",
+        "order": 21,
         "description": ""
       }
     ]
