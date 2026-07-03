@@ -102,7 +102,7 @@
     "order": 20,
     "works": [
       {
-        "id": "1",
+        "id": "201",
         "title": "The horseman",
         "year": "2021",
         "technique": "Zbrush",
@@ -111,7 +111,7 @@
         "description": "The work was done for a television screensaver"
       },
       {
-        "id": "2",
+        "id": "202",
         "title": "The Frog Princess",
         "year": "2024",
         "technique": "Zbrush",
@@ -120,7 +120,7 @@
         "description": "On the theme of Russian folk tales"
       },
       {
-        "id": "3",
+        "id": "203",
         "title": "Toppi",
         "year": "2022",
         "technique": "Zbrush",
@@ -129,7 +129,7 @@
         "description": "Based on a drawing by Sergio Toppi"
       },
       {
-        "id": "4",
+        "id": "204",
         "title": "Dodo",
         "year": "2024",
         "technique": "Zbrush",
@@ -138,7 +138,7 @@
         "description": "Dodo"
       },
       {
-        "id": "5",
+        "id": "205",
         "title": "The man with the fish",
         "year": "2025",
         "technique": "Zbrush",
@@ -147,7 +147,7 @@
         "description": "fantasy"
       },
       {
-        "id": "6",
+        "id": "206",
         "title": "Kauk",
         "year": "2025",
         "technique": "Zbrush",
@@ -156,7 +156,7 @@
         "description": "kauk"
       },
       {
-        "id": "7",
+        "id": "207",
         "title": "Baba Yaga",
         "year": "2024",
         "technique": "Zbrush",
@@ -165,7 +165,7 @@
         "description": "Russian folk/Belibin"
       },
       {
-        "id": "8",
+        "id": "208",
         "title": "Immigration",
         "year": "2026",
         "technique": "Zbrush",
@@ -174,7 +174,7 @@
         "description": ""
       },
       {
-        "id": "9",
+        "id": "209",
         "title": "Immigration",
         "year": "2026",
         "technique": "Zbrush",
@@ -183,7 +183,7 @@
         "description": ""
       },
       {
-        "id": "10",
+        "id": "210",
         "title": "Immigration",
         "year": "2026",
         "technique": "Zbrush",
@@ -192,7 +192,7 @@
         "description": ""
       },
       {
-        "id": "11",
+        "id": "211",
         "title": "Immigration",
         "year": "2023",
         "technique": "Zbrush",
@@ -201,8 +201,8 @@
         "description": ""
       },
       {
-        "id": "12",
-        "title": "Zoricto",
+        "id": "212",
+        "title": "Samsara",
         "year": "2023",
         "technique": "Zbrush",
         "image": "images/works/z_crop.png",
@@ -217,7 +217,7 @@
     "order": 30,
     "works": [
       {
-        "id": "3",
+        "id": "300",
         "title": "Green apples",
         "year": "2019",
         "technique": "Watercolour",
@@ -226,7 +226,7 @@
         "description": ""
       },
       {
-        "id": "4",
+        "id": "301",
         "title": "Red apples",
         "year": "2020",
         "technique": "Watercolour",
@@ -235,7 +235,7 @@
         "description": ""
       },
       {
-        "id": "5",
+        "id": "302",
         "title": "Olives",
         "year": "2020",
         "technique": "Watercolour",
@@ -244,7 +244,7 @@
         "description": ""
       },
       {
-        "id": "8",
+        "id": "303",
         "title": "Flowers",
         "year": "2018",
         "technique": "pen",
@@ -253,7 +253,7 @@
         "description": ""
       },
       {
-        "id": "9",
+        "id": "304",
         "title": "Tree",
         "year": "2018",
         "technique": "pen",
@@ -262,7 +262,7 @@
         "description": ""
       },
       {
-        "id": "11",
+        "id": "305",
         "title": "Old wamens",
         "year": "2016",
         "technique": "Watercolour",
@@ -271,7 +271,7 @@
         "description": ""
       },
       {
-        "id": "12",
+        "id": "306",
         "title": "vegetables",
         "year": "2015",
         "technique": "Watercolour",
@@ -280,7 +280,7 @@
         "description": ""
       },
       {
-        "id": "13",
+        "id": "307",
         "title": "Illustration",
         "year": "2017",
         "technique": "Pen",
@@ -289,7 +289,7 @@
         "description": ""
       },
       {
-        "id": "14",
+        "id": "308",
         "title": "Illustration",
         "year": "2017",
         "technique": "",
@@ -298,7 +298,7 @@
         "description": ""
       },
       {
-        "id": "15",
+        "id": "309",
         "title": "Illustration",
         "year": "2017",
         "technique": "",
@@ -307,7 +307,7 @@
         "description": ""
       },
       {
-        "id": "16",
+        "id": "310",
         "title": "Bag",
         "year": "2015",
         "technique": "Watercolour",
@@ -316,7 +316,7 @@
         "description": ""
       },
       {
-        "id": "17",
+        "id": "311",
         "title": "Art",
         "year": "2015",
         "technique": "Pen",
@@ -325,7 +325,7 @@
         "description": ""
       },
       {
-        "id": "18",
+        "id": "312",
         "title": "Art",
         "year": "2015",
         "technique": "Pen",
@@ -334,7 +334,7 @@
         "description": ""
       },
       {
-        "id": "19",
+        "id": "313",
         "title": "Art",
         "year": "2015",
         "technique": "Pen",
@@ -343,7 +343,7 @@
         "description": ""
       },
       {
-        "id": "19",
+        "id": "314",
         "title": "Art",
         "year": "2015",
         "technique": "Pen",
@@ -352,7 +352,7 @@
         "description": ""
       },
       {
-        "id": "20",
+        "id": "315",
         "title": "Art",
         "year": "2015",
         "technique": "Pen",
@@ -361,7 +361,7 @@
         "description": ""
       },
       {
-        "id": "21",
+        "id": "316",
         "title": "Art",
         "year": "2015",
         "technique": "Pen",
@@ -377,7 +377,7 @@
     "order": 40,
     "works": [
       {
-        "id": "1",
+        "id": "401",
         "title": "A pot of porridge",
         "year": "2021",
         "technique": "Papier mache/fabric",
@@ -386,7 +386,7 @@
         "description": "For the illustration of the book \"A Pot of Porridge\""
       },
       {
-        "id": "2",
+        "id": "402",
         "title": "A donkey on a cart",
         "year": "2022",
         "technique": "fabric/wood",
@@ -395,7 +395,7 @@
         "description": ""
       },
       {
-        "id": "4",
+        "id": "403",
         "title": "A pot of porridge",
         "year": "2021",
         "technique": "Papier mache",
@@ -404,7 +404,7 @@
         "description": ""
       },
       {
-        "id": "5",
+        "id": "404",
         "title": "A pot of porridge",
         "year": "2021",
         "technique": "Papier mache",
@@ -413,7 +413,7 @@
         "description": ""
       },
       {
-        "id": "6",
+        "id": "405",
         "title": "Koat",
         "year": "2021",
         "technique": "Cloth/wood",
@@ -422,7 +422,7 @@
         "description": ""
       },
       {
-        "id": "9",
+        "id": "406",
         "title": "Sheep",
         "year": "2021",
         "technique": "Papier mache/Cloth/wood",
@@ -431,7 +431,7 @@
         "description": ""
       },
       {
-        "id": "11",
+        "id": "407",
         "title": "Fish",
         "year": "2021",
         "technique": "Cloth",
