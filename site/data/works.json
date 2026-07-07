@@ -1,7 +1,7 @@
 {
   "jewelry": {
-    "id": "jewelry",
-    "name": "jewelry",
+    "id": "Jewelry",
+    "name": "Jewelry",
     "order": 10,
     "works": [
       {
@@ -97,8 +97,8 @@
     ]
   },
   "3d-sculping": {
-    "id": "3d-sculping",
-    "name": "3D sculping",
+    "id": "3d-sculpting",
+    "name": "3D sculpting",
     "order": 20,
     "works": [
       {

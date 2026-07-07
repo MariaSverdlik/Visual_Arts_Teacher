@@ -11,13 +11,29 @@ function getValueByPath(path) {
   return path.split('.').reduce((obj, key) => obj && obj[key], contentData);
 }
 
+// Экранирование HTML, чтобы текст из JSON нельзя было случайно
+// или специально интерпретировать как произвольную разметку.
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+// Поддержка простой markdown-разметки в тексте: **жирный**.
+// Перенос строк (\n) обрабатывается отдельно через CSS white-space: pre-line.
+function parseMarkup(value) {
+  if (typeof value !== 'string') return value;
+  return escapeHtml(value).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+}
+
 function renderContent() {
   // Простые текстовые значения
   document.querySelectorAll('[data-content]').forEach(el => {
     const path = el.dataset.content;
     const value = getValueByPath(path);
     if (value !== undefined) {
-      el.textContent = value;
+      el.innerHTML = parseMarkup(value);
     }
   });
 
@@ -81,7 +97,7 @@ function renderContent() {
   const factsContainer = document.querySelector('[data-content-list-facts="about.facts"]');
   if (factsContainer && contentData?.about?.facts) {
     factsContainer.innerHTML = contentData.about.facts
-      .map(fact => `<div><strong>${fact.value}</strong><span>${fact.label}</span></div>`)
+      .map(fact => `<div><strong>${parseMarkup(fact.value)}</strong><span>${parseMarkup(fact.label)}</span></div>`)
       .join('');
   }
 
@@ -89,7 +105,7 @@ function renderContent() {
   const principlesContainer = document.querySelector('[data-content-list-principles="philosophy.principles"]');
   if (principlesContainer && contentData?.philosophy?.principles) {
     principlesContainer.innerHTML = contentData.philosophy.principles
-      .map(p => `<article><span>${p.number}</span><h3>${p.title}</h3><p>${p.text}</p></article>`)
+      .map(p => `<article><span>${parseMarkup(p.number)}</span><h3>${parseMarkup(p.title)}</h3><p>${parseMarkup(p.text)}</p></article>`)
       .join('');
   }
 
@@ -97,7 +113,7 @@ function renderContent() {
   const timelineContainer = document.querySelector('[data-content-list-timeline="cv.timeline"]');
   if (timelineContainer && contentData?.cv?.timeline) {
     timelineContainer.innerHTML = contentData.cv.timeline
-      .map(item => `<article><time>${item.period}</time><h3>${item.title}</h3><p>${item.text}</p></article>`)
+      .map(item => `<article><time>${parseMarkup(item.period)}</time><h3>${parseMarkup(item.title)}</h3><p>${parseMarkup(item.text)}</p></article>`)
       .join('');
   }
 }
@@ -108,14 +124,14 @@ const galleries = {
     gallery: document.querySelector('[data-gallery="works"]'),
     filters: document.querySelector('[data-filters="works"]'),
     items: [],
-    activeCategory: null
+    activeCategory: "All"
   },
   students: {
     dataUrl: "data/students.json",
     gallery: document.querySelector('[data-gallery="students"]'),
     filters: document.querySelector('[data-filters="students"]'),
     items: [],
-    activeCategory: null
+    activeCategory: "All"
   }
 };
 
@@ -151,26 +167,63 @@ dialog.addEventListener("click", (event) => {
   }
 });
 
+const videoDialog = document.querySelector("[data-video-dialog]");
+const videoDialogVideo = videoDialog?.querySelector("[data-video-dialog-video]");
+
+document.querySelectorAll("[data-video-trigger]").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    videoDialogVideo.src = trigger.dataset.videoSrc;
+    videoDialog.showModal();
+    videoDialogVideo.play();
+  });
+});
+
+document.querySelector("[data-video-dialog-close]")?.addEventListener("click", () => {
+  videoDialog.close();
+});
+
+videoDialog?.addEventListener("click", (event) => {
+  if (event.target === videoDialog) {
+    videoDialog.close();
+  }
+});
+
+videoDialog?.addEventListener("close", () => {
+  videoDialogVideo.pause();
+  videoDialogVideo.removeAttribute("src");
+});
+
 async function loadGallery(key) {
   const state = galleries[key];
   const response = await fetch(state.dataUrl);
   const rawData = await response.json();
 
-  let flatItems = [];
-  let categories = [];
+  let categories;
+  let flatItems;
 
   if (Array.isArray(rawData)) {
-    // Плоский массив (students.json) — категории берем из поля item.category
-    flatItems = [...rawData].sort((a, b) => a.order - b.order);
-    const categoryNames = [...new Set(flatItems.map(item => item.category))];
-    categories = categoryNames.map(name => ({ id: name, name }));
-  } else {
-    // Объект-каталог категорий (works.json)
-    categories = Object.values(rawData).sort((a, b) => a.order - b.order);
+    // Плоский список (students.json): категории формируем из поля item.category
+    flatItems = rawData.map((item) => ({
+      ...item,
+      category: item.category,
+      categoryId: item.category
+    }));
 
-    categories.forEach(category => {
+    const seen = new Map();
+    rawData.forEach((item) => {
+      if (!seen.has(item.category)) {
+        seen.set(item.category, { id: item.category, name: item.category, order: item.order ?? 0 });
+      }
+    });
+    categories = [...seen.values()].sort((a, b) => a.order - b.order);
+  } else {
+    // Вложенная структура по категориям (works.json)
+    categories = Object.values(rawData).sort((a, b) => a.order - b.order);
+    flatItems = [];
+
+    categories.forEach((category) => {
       if (category.works && Array.isArray(category.works)) {
-        category.works.forEach(work => {
+        category.works.forEach((work) => {
           flatItems.push({
             ...work,
             category: category.name,
@@ -183,7 +236,6 @@ async function loadGallery(key) {
 
   state.items = flatItems;
   state.categories = categories; // Сохраняем категории для меню
-  state.activeCategory = categories[0]?.name;
 
   renderFilters(key);
   renderGallery(key);
@@ -191,8 +243,8 @@ async function loadGallery(key) {
 
 function renderFilters(key) {
   const state = galleries[key];
-  // Формируем список категорий из структуры данных
-  const categories = state.categories.map(cat => cat.name);
+  // Формируем список категорий из структуры данных + "All"
+  const categories = ["All", ...state.categories.map(cat => cat.name)];
 
   state.filters.innerHTML = categories
     .map((category) => {
@@ -213,7 +265,9 @@ function renderFilters(key) {
 
 function renderGallery(key) {
   const state = galleries[key];
-  const items = state.items.filter((item) => item.category === state.activeCategory);
+  const items = state.activeCategory === "All"
+    ? state.items
+    : state.items.filter((item) => item.category === state.activeCategory);
 
   state.gallery.scrollTop = 0;
   state.gallery.innerHTML = `
