@@ -151,6 +151,34 @@ dialog.addEventListener("click", (event) => {
   }
 });
 
+
+const videoDialog = document.querySelector("[data-video-dialog]");
+const videoDialogVideo = videoDialog?.querySelector("[data-video-dialog-video]");
+
+document.querySelectorAll("[data-video-trigger]").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    videoDialogVideo.src = trigger.dataset.videoSrc;
+    videoDialog.showModal();
+    videoDialogVideo.play();
+  });
+});
+
+document.querySelector("[data-video-dialog-close]")?.addEventListener("click", () => {
+  videoDialog.close();
+});
+
+videoDialog?.addEventListener("click", (event) => {
+  if (event.target === videoDialog) {
+    videoDialog.close();
+  }
+});
+
+videoDialog?.addEventListener("close", () => {
+  videoDialogVideo.pause();
+  videoDialogVideo.removeAttribute("src");
+});
+
+
 async function loadGallery(key) {
   const state = galleries[key];
   const response = await fetch(state.dataUrl);
