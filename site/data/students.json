@@ -2,9 +2,9 @@
   {
     "id": "student-20",
     "title": "Work02",
-    "year": "2026",
+    "year": "",
     "category": "Works",
-    "technique": "Маркер",
+    "technique": "",
     "image": "images/students/picture-58.jpg",
     "order": 21,
     "description": ""
@@ -12,9 +12,9 @@
   {
     "id": "student-30",
     "title": "Work03",
-    "year": "2026",
+    "year": "",
     "category": "Works",
-    "technique": "Маркер",
+    "technique": "",
     "image": "images/students/add/picture-1.jpg",
     "order": 22,
     "description": ""

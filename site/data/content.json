@@ -21,7 +21,7 @@
     "lead": "Interdisciplinary artist and educator working across drawing, sculpture, jewelry, 3D, and contemporary visual practice.\nWelcome to my teaching portfolio.",
     "primaryButton": { "href": "#works", "text": "View Works" },
     "secondaryButton": { "href": "#contacts", "text": "Get in Touch" },
-    "artImage": "images/site/Masha2.jpg",
+    "artImage": "images/site/Masha3.jpg",
     "artAlt": "Colorful art composition"
   },
   "about": {
@@ -29,7 +29,7 @@
     "heading": "A quiet studio where technique serves freedom.",
     "text": "I teach drawing, painting and composition to children, teenagers and adults. In class we connect observation, craft and the student's personal interests so the result is not a lucky pretty picture, but a clear step forward.",
     "facts": [],
-    "portraitImage": "images/site/Masha2.jpg",
+    "portraitImage": "images/site/Masha3.jpg",
     "portraitAlt": "Teacher portrait",
     "portraitCaption": "Replace the photo in the images/site folder."
   },

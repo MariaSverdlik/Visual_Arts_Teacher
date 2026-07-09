@@ -6,7 +6,7 @@
     "works": [
       {
         "id": "1",
-        "title": "Work01",
+        "title": "Collection - Thais",
         "year": "2025",
         "technique": "Brass/Gilding",
         "image": "images/works/sergi02.jpg",
@@ -15,7 +15,7 @@
       },
       {
         "id": "5",
-        "title": "Work02",
+        "title": "Collection - Birds",
         "year": "2024",
         "technique": "Silver/Enamel",
         "image": "images/works/birds.jpg",
@@ -24,7 +24,7 @@
       },
       {
         "id": "3",
-        "title": "Work03",
+        "title": "Collection - Space artifacts",
         "year": "2024",
         "technique": "Silver/Enamel",
         "image": "images/works/Home0064.jpg",
@@ -33,7 +33,7 @@
       },
       {
         "id": "4",
-        "title": "Work04",
+        "title": "Collection - Space artifacts",
         "year": "2024",
         "technique": "Silver/Enamel",
         "image": "images/works/Home0129.jpg",
@@ -42,7 +42,7 @@
       },
       {
         "id": "2",
-        "title": "Work05",
+        "title": "Collection - Thais",
         "year": "2025",
         "technique": "Silver/Gilding",
         "image": "images/works/braslet01.png",
@@ -51,7 +51,7 @@
       },
       {
         "id": "6",
-        "title": "Work06",
+        "title": "Collection - Space artifacts",
         "year": "2025",
         "technique": "Silver/Enamel",
         "image": "images/works/Home0103.jpg",
@@ -60,7 +60,7 @@
       },
       {
         "id": "7",
-        "title": "Work07",
+        "title": "Collection - Space artifacts",
         "year": "2025",
         "technique": "Silver/Enamel",
         "image": "images/works/IMG_2796.jpg",
@@ -69,7 +69,7 @@
       },
       {
         "id": "8",
-        "title": "Work08",
+        "title": "Collection - VisheGolovy",
         "year": "2025",
         "technique": "Silver/Enamel",
         "image": "images/works/rings01.png",
@@ -78,7 +78,7 @@
       },
       {
         "id": "9",
-        "title": "Work09",
+        "title": "Collection - Thais",
         "year": "2025",
         "technique": "Silver/Enamel",
         "image": "images/works/1krest2.jpg",
@@ -87,7 +87,7 @@
       },
       {
         "id": "10",
-        "title": "Work10",
+        "title": "Collection - Thais",
         "year": "2025",
         "technique": "Silver/Enamel",
         "image": "images/works/2kresta.jpg",
@@ -103,7 +103,7 @@
     "works": [
       {
         "id": "201",
-        "title": "Work11",
+        "title": "The horseman",
         "year": "2021",
         "technique": "Zbrush",
         "image": "images/works/horse_01.jpg",
@@ -112,7 +112,7 @@
       },
       {
         "id": "202",
-        "title": "Work12",
+        "title": "The Frog Princess",
         "year": "2024",
         "technique": "Zbrush",
         "image": "images/works/zarevna.jpg",
@@ -121,7 +121,7 @@
       },
       {
         "id": "203",
-        "title": "Work13",
+        "title": "Toppi",
         "year": "2022",
         "technique": "Zbrush",
         "image": "images/works/toppi.jpg",
@@ -130,7 +130,7 @@
       },
       {
         "id": "204",
-        "title": "Work14",
+        "title": "Dodo",
         "year": "2024",
         "technique": "Zbrush",
         "image": "images/works/dodo.jpg",
@@ -139,7 +139,7 @@
       },
       {
         "id": "205",
-        "title": "Work15",
+        "title": "The man with the fish",
         "year": "2025",
         "technique": "Zbrush",
         "image": "images/works/fish_man.jpg",
@@ -148,7 +148,7 @@
       },
       {
         "id": "206",
-        "title": "Work16",
+        "title": "Kauk",
         "year": "2025",
         "technique": "Zbrush",
         "image": "images/works/Kauk.jpg",
@@ -157,7 +157,7 @@
       },
       {
         "id": "207",
-        "title": "Work17",
+        "title": "Baba Yaga",
         "year": "2024",
         "technique": "Zbrush",
         "image": "images/works/babaYaga.jpg",
@@ -166,7 +166,7 @@
       },
       {
         "id": "208",
-        "title": "Work18",
+        "title": "Immigration",
         "year": "2026",
         "technique": "Zbrush",
         "image": "images/works/immig_01.jpg",
@@ -175,7 +175,7 @@
       },
       {
         "id": "209",
-        "title": "Work19",
+        "title": "Immigration",
         "year": "2026",
         "technique": "Zbrush",
         "image": "images/works/immig_04.jpg",
@@ -184,7 +184,7 @@
       },
       {
         "id": "210",
-        "title": "Work20",
+        "title": "Immigration",
         "year": "2026",
         "technique": "Zbrush",
         "image": "images/works/immig_06.jpg",
@@ -193,7 +193,7 @@
       },
       {
         "id": "211",
-        "title": "Work21",
+        "title": "Buryat",
         "year": "2023",
         "technique": "Zbrush",
         "image": "images/works/Pokras-1.jpg",
@@ -202,7 +202,7 @@
       },
       {
         "id": "212",
-        "title": "Work22",
+        "title": "Samsara",
         "year": "2023",
         "technique": "Zbrush",
         "image": "images/works/z_crop.png",
@@ -218,7 +218,7 @@
     "works": [
       {
         "id": "300",
-        "title": "Work23",
+        "title": "Green apples",
         "year": "2019",
         "technique": "Watercolour",
         "image": "images/works/drawing01.jpg",
@@ -227,7 +227,7 @@
       },
       {
         "id": "301",
-        "title": "Work24",
+        "title": "Red apples",
         "year": "2020",
         "technique": "Watercolour",
         "image": "images/works/drawing02.jpg",
@@ -236,7 +236,7 @@
       },
       {
         "id": "302",
-        "title": "Work25",
+        "title": "Olives",
         "year": "2020",
         "technique": "Watercolour",
         "image": "images/works/drawing06.jpg",
@@ -245,7 +245,7 @@
       },
       {
         "id": "303",
-        "title": "Work26",
+        "title": "Flowers",
         "year": "2018",
         "technique": "pen",
         "image": "images/works/drawing03.jpg",
@@ -254,7 +254,7 @@
       },
       {
         "id": "304",
-        "title": "Work27",
+        "title": "Tree",
         "year": "2018",
         "technique": "pen",
         "image": "images/works/drawing04.jpg",
@@ -263,7 +263,7 @@
       },
       {
         "id": "305",
-        "title": "Work28",
+        "title": "Old wamens",
         "year": "2016",
         "technique": "Watercolour",
         "image": "images/works/babka.jpg",
@@ -272,7 +272,7 @@
       },
       {
         "id": "306",
-        "title": "Work29",
+        "title": "vegetables",
         "year": "2015",
         "technique": "Watercolour",
         "image": "images/works/ovoshi.jpg",
@@ -281,7 +281,7 @@
       },
       {
         "id": "307",
-        "title": "Work30",
+        "title": "Illustration",
         "year": "2017",
         "technique": "Pen",
         "image": "images/works/kidnapping.jpg",
@@ -290,7 +290,7 @@
       },
       {
         "id": "308",
-        "title": "Work31",
+        "title": "Illustration",
         "year": "2017",
         "technique": "",
         "image": "images/works/pict04.jpg",
@@ -299,7 +299,7 @@
       },
       {
         "id": "309",
-        "title": "Work32",
+        "title": "Illustration",
         "year": "2017",
         "technique": "",
         "image": "images/works/pict07.jpg",
@@ -308,7 +308,7 @@
       },
       {
         "id": "310",
-        "title": "Work33",
+        "title": "Bag",
         "year": "2015",
         "technique": "Watercolour",
         "image": "images/works/maket_sumka.jpg",
@@ -317,7 +317,7 @@
       },
       {
         "id": "311",
-        "title": "Work34",
+        "title": "Art",
         "year": "2015",
         "technique": "Pen",
         "image": "images/works/art_01.jpg",
@@ -326,7 +326,7 @@
       },
       {
         "id": "312",
-        "title": "Work35",
+        "title": "Art",
         "year": "2015",
         "technique": "Pen",
         "image": "images/works/art_02.jpg",
@@ -335,7 +335,7 @@
       },
       {
         "id": "313",
-        "title": "Work36",
+        "title": "Art",
         "year": "2015",
         "technique": "Pen",
         "image": "images/works/art_03.jpg",
@@ -344,7 +344,7 @@
       },
       {
         "id": "314",
-        "title": "Work37",
+        "title": "Art",
         "year": "2015",
         "technique": "Pen",
         "image": "images/works/art_04.jpg",
@@ -353,7 +353,7 @@
       },
       {
         "id": "315",
-        "title": "Work38",
+        "title": "Art",
         "year": "2015",
         "technique": "Pen",
         "image": "images/works/art_05.jpg",
@@ -362,7 +362,7 @@
       },
       {
         "id": "316",
-        "title": "Work39",
+        "title": "Art",
         "year": "2015",
         "technique": "Pen",
         "image": "images/works/art_06.jpg",
@@ -378,7 +378,7 @@
     "works": [
       {
         "id": "401",
-        "title": "Work40",
+        "title": "A pot of porridge",
         "year": "2021",
         "technique": "Papier mache/fabric",
         "image": "images/works/garshok.jpg",
@@ -387,7 +387,7 @@
       },
       {
         "id": "402",
-        "title": "Work41",
+        "title": "A donkey on a cart",
         "year": "2022",
         "technique": "fabric/wood",
         "image": "images/works/Oslik.jpg",
@@ -396,7 +396,7 @@
       },
       {
         "id": "403",
-        "title": "Work42",
+        "title": "A pot of porridge",
         "year": "2021",
         "technique": "Papier mache",
         "image": "images/works/gorshoshek kashi3.jpg",
@@ -405,7 +405,7 @@
       },
       {
         "id": "404",
-        "title": "Work43",
+        "title": "A pot of porridge",
         "year": "2021",
         "technique": "Papier mache",
         "image": "images/works/razvarot2_1.jpg",
@@ -414,7 +414,7 @@
       },
       {
         "id": "405",
-        "title": "Work44",
+        "title": "Koat",
         "year": "2021",
         "technique": "Cloth/wood",
         "image": "images/works/Koza-bodat-06.jpg",
@@ -423,7 +423,7 @@
       },
       {
         "id": "406",
-        "title": "Work45",
+        "title": "Sheep",
         "year": "2021",
         "technique": "Papier mache/Cloth/wood",
         "image": "images/works/Ovza_new02.jpg",
@@ -432,7 +432,7 @@
       },
       {
         "id": "407",
-        "title": "Work46",
+        "title": "Fish",
         "year": "2021",
         "technique": "Cloth",
         "image": "images/works/pianist01.jpg",
